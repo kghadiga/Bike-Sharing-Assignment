@@ -17,7 +17,7 @@ How well those variables describe the bike demands
 Based on various meteorological surveys and people's styles, the service provider firm has gathered a large dataset on daily bike demands across the American market based on some factors. 
 
 
-**Business Goal:**
+## **Business Goal:**
 You are required to model the demand for shared bikes with the available independent variables. It will be used by the management to understand how exactly the demands vary with different features. They can accordingly manipulate the business strategy to meet the demand levels and meet the customer's expectations. Further, the model will be a good way for management to understand the demand dynamics of a new market. 
 
 
@@ -35,3 +35,10 @@ In the dataset provided, you will notice that there are three columns named 'cas
 
 ## **Model Evaluation:**
 When you're done with model building and residual analysis and have made predictions on the test set, just make sure you use the following two lines of code to calculate the R-squared score on the test set.
+
+from sklearn.metrics import r2_score
+r2_score(y_test, y_pred)
+
+where y_test is the test data set for the target variable, and y_pred is the variable containing the predicted values of the target variable on the test set.
+
+Please don't forget to perform this step as the R-squared score on the test set holds some marks. The variable names inside the 'r2_score' function can be different based on the variable names you have chosen.
